@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./src/product.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div id="headerTop">
+        <!-- NAVIGATION -->
+        <a href="index.html" class="logo-header">ARTCRAFT.</a>
+        <ul id="navHeader">
+            <li><a href="">Sculpture</a></li>
+            <li><a href="">Frames</a></li>
+            <li><a href="">Relief</a></li>
+            <li><a href="">Statue</a></li>
+            <li>
+                <a href="">
+                    More
+                    <i class="bi bi-caret-down-fill"></i>
+                </a>
+                <ul class="subnavH">
+                    <li><a href="#">Wardrobes</a> </li>
+                    <li><a href="#">Maquette</a></li>
+                    <li><a href="#">Ceramic</a></li>
+                    <li><a href="#">Lighting</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="menu1">
+            <li><a href="#"> <i class="bi bi-search"></i></a> </li>
+            <li>
+              <a href="#"><i id="user" class="bi bi-person"></i></a>
+              <ul id="userList" class="user-option">
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+              </ul>
+            </li>
+            <li><a href="#"> <i class="bi bi-cart"></i></a> </li>
+        </div>
+    </div>
+          <div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/03-695x800.jpg">
+                </div>
+                <div class="item">
+                    <img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/08-695x800.jpg">
+                </div>
+                <div class="item">
+                    <img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/07-695x800.jpg">
+                </div>
+                <div class="item">
+                    <img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/06-695x800.jpg">
+                </div>
+                <div class="item">
+                    <img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/05-695x800.jpg">
+                </div>
+                <div class="item">
+                    <img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/04-695x800.jpg">
+                </div>
+            </div>
+        </div> 
+    <div class="clearfix">
+        <div id="thumbcarousel" class="carousel slide" data-interval="false">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/03-695x800.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/08-695x800.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/07-695x800.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/06-695x800.jpg"></div>
+                </div><!-- /item -->
+                <div class="item">
+                    <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/05-695x800.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/04-695x800.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/08-695x800.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="https://capricathemes.com/opencart/OPC02/OPC020033/image/cache/catalog/06-695x800.jpg"></div>
+                </div><!-- /item -->
+            </div><!-- /carousel-inner -->
+            <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div> <!-- /thumbcarousel -->
+    </div><!-- /clearfix -->
+    </div> <!-- /col-sm-6 -->
+    <div class="col-sm-6">
+        <h2>Commodi Consequatur</h2>
+        <hr>
+        <h4>Brand: Palm</h4>
+        <h4>Product Code: Product 8</h4>
+        <h4>Availability: In Stock</h4>
+        <hr>
+        <p>Product description goes here.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+        <hr>
+        <h3>Available Options</h3>
+        <p>* Price: </p>
+        <h2>$134.00</h2>
+        <p>* Size:</p>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Select one</option>
+            <option value="1">Small</option>
+            <option value="2">Medidum</option>
+            <option value="3">Large</option>
+        </select>
+        <p>* Number Of Quantity:</p>
+        <input value=1 type="number">
+			<a class="btn" href="#">Add to Cart</a>
+        
+    </div> <!-- /col-sm-6 -->
+  </div> <!-- /row -->
+</div> <!-- /container -->
+<div class="desc">
+    <h4>Description</h4>
+    <div class="desc-box">
+        <h4>The standard Lorem Ipsum passage, used since the 1500</h4>
+        <p>Fashion has been creating well-designed collections since 2010. The brand offers feminine designs delivering stylish separates and statement dresses which has since evolved into a full ready-to-wear collection in which every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance.Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+
+            c It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,</p>
+        <h4>Contrary to popular belief, Lorem Ipsum is not simply random text.</h4>
+        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="Fcontainer">
+        <div class="row">
+            <div class="footer-col-s">
+                <h1>ARTCRAFT.</h1>
+             <p>There are many variations of passages of look even slightly believable.</p>
+             <div class="social-links">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+             </div>
+         </div>
+         <div class="footer-col">
+             <h4>Information</h4>
+             <ul>
+                 <li><a href="#">About Us</a></li>
+                 <li><a href="#">Delivery Information</a></li>
+                 <li><a href="#">Privacy Policy</a></li>
+                 <li><a href="#">Terms & Conditions</a></li>
+                 <li><a href="#">Site Map</a></li>
+             </ul>
+         </div>
+         <div class="footer-col">
+             <h4>Extras</h4>
+             <ul>
+                 <li><a href="#">Brands</a></li>
+                 <li><a href="#">Gift Certificates</a></li>
+                 <li><a href="#">Affiliate</a></li>
+                 <li><a href="#">Specials</a></li>
+                 <li><a href="#">Contact Us</a></li>
+             </ul>
+         </div>
+         <div class="footer-col">
+             <h4>follow us</h4>
+             <div class="store-infor">
+                 <p><i class="bi bi-geo-alt-fill"></i> Artcraft - Art Store
+                     United States</p>
+                 <p><i class="bi bi-telephone-fill"></i>	000-000-0000</p>
+                 <p><i class="bi bi-printer-fill"></i> 123456</p>
+                 <p><i class="bi bi-envelope-fill"></i> sales@yourcompany.com</p>
+             </div>
+             
+         </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

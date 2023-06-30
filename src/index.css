@@ -298,7 +298,7 @@ ol, ul {
     
  }
  
- .item-top p.buy{
+ .item-top a.buy{
     text-transform: uppercase;
     position: absolute;
     background-color: gray;
@@ -314,11 +314,12 @@ ol, ul {
     font-weight: 500;
     
  }
- .item-top:hover p.buy{
+ .item-top:hover a.buy{
     background-color: gray;
     height: 35px;
-   bottom: -19px;
+   bottom: -3px;
    transition: 0.25s ease-in-out;
+   text-decoration: none;
  }
  .product{
     width: 80%;
@@ -434,10 +435,10 @@ ul{
    padding: 0 15px;
 }
 .ul1{
-    margin-left: -30px;
+    margin-left: 0;
 }
 .ul2{
-    margin-left: -30px;
+    margin-left: 0;
 }
 .footer-col-s{
 	width: 31%;
@@ -507,6 +508,9 @@ ul{
 	display: flex;
 	flex-direction: column;
 	color: white;
+}
+.store-infor p i{
+    margin-right: 10px;
 }
 
 
@@ -727,11 +731,13 @@ ul{
     }
 
 @media only screen and (max-width: 992px) {
-    .header{
+    .headerTop{
+        display: flex;
         flex-direction: column;
         background-color: rgb(220, 218, 218);
+        width: 132px;
    }
-    .menu{
+    .navHeader{
       display: flex;
         list-style: none;
         margin-left: 70px;
@@ -1456,3 +1462,38 @@ ul{
 }
 
 
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+  
+  /* Large Devices, Wide Screens */
+  @media only screen and (max-width: 1200px) {
+      #headerTop{
+          display: flex;
+          flex-direction: column; 
+          height: 132px;   
+      }
+      .logo-header{
+          display: flex;
+          justify-content: center;
+      }
+      .menu1{
+          display: none;
+      }
+  }
+  
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 576px) {
+      #navHeader li a {
+          padding: 0 10px;
+      }
+  }
+  
