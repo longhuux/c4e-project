@@ -109,15 +109,35 @@
         <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
         <hr>
         <h3>Available Options</h3>
-        <p>* Price: </p>
-        <h2>$134.00</h2>
+        <p>* Price:</p>
+        <h2 id="show_message"></h2>
         <p>* Size:</p>
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Select one</option>
-            <option value="1">Small</option>
-            <option value="2">Medidum</option>
-            <option value="3">Large</option>
+        <select id="price" class="form-select" onchange="priceChanged(this)">
+            <option value="">Select one</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="small">Small</option>
         </select>
+        <script language="javascript">
+            function priceChanged(obj)
+            {
+                var message = document.getElementById('show_message');
+                var value = obj.value;
+                if (value === ''){
+                    message.innerHTML = "Please choose product size.";
+                }
+                else if (value === 'medium'){
+                    message.innerHTML = "$134.00";
+                }
+                else if (value === 'large'){
+                    message.innerHTML = "$144.00";
+                }
+                else if (value === 'small'){
+                    message.innerHTML = "$124.00";
+                }
+            }
+
+        </script>
         <p>* Number Of Quantity:</p>
         <input value=1 type="number">
 			<a class="btn" href="#">Add to Cart</a>
